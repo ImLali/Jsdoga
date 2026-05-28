@@ -12,13 +12,10 @@ let visszalepesek = 0;
 
 for (let dobas of dobasok) {
     pozicio += dobas;
-
-    // Létra mező
     if (pozicio % 10 === 0) {
         pozicio -= 3;
         visszalepesek++;
     }
-
     process.stdout.write(pozicio + " ");
 }
 
